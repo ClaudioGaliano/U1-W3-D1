@@ -17,13 +17,14 @@ es1('ciao', 'Epicode')
 */
 let arrayEs2 = []
 
-arrayEs2.forEach((randomNumber) => {
+arrayEs2.forEach((n) => {
   if (arrayEs2.lenght <=10) {
     let randomNumber = Math.floor(Math.random()*101)
     arrayEs2.push(randomNumber)
   }
-  return arrayEs2
 })
+
+console.log(arrayEs2);
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
@@ -38,23 +39,49 @@ console.log(evenNumber);
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+numbers = [20, 30, 50]
+
+// numbers.forEach((n) => {
+//   let tot = 
+// })
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+const totale = numbers.reduce((total, singleNumber) => {
+  return total + singleNumber
+})
+
+console.log('Totale', totale);
+
+
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+const arrayEs6 = [2,5,6]
+const arrayIncremento = arrayEs6.map((n) => {
+  let incremento = 2
+  return n + incremento
+})
+
+console.log("Incremento", arrayIncremento);
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+// const arrayEs7 = ["Full", "Stack", "Developer"]
+// const returnLength = arrayEs7.map((word) {
+
+// })
+
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+const arrayEs8 = []
+const arrayOneHundred = arrayEs8
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
